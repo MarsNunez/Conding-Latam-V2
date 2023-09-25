@@ -2,7 +2,11 @@ import Card from "./Card";
 
 const CardsWrapper = () => {
   return (
-    <section>
+    <section className="flex flex-col gap-4">
+      <Card />
+      <Card />
+      <Card />
+      <Card />
       <Card />
     </section>
   );

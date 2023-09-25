@@ -4,7 +4,7 @@ const Topics = () => {
   return (
     <section>
       <div className="text-sm relative flex items-center">
-        <i class="lni lni-search-alt absolute left-3"></i>
+        <i className="lni lni-search-alt absolute left-3"></i>
         <input
           type="text"
           placeholder="Buscar Curso"

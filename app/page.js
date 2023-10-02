@@ -10,17 +10,13 @@ export default function Home() {
 
   return (
     <main className="relative">
-      <div className="min-h-screen absolute z-10 w-full top-0 backdrop-blur-md duration-200">
-        <div
-          className={`w-3/4 bg-white min-h-screen border-r-2 drop-shadow-lg absolute duration-200 border border-red-600 ${
-            first ? "-left-full" : "-left-0"
-          }`}
-        >
-          Sidebar
+      <div className="border border-red-600 z-10 w-full absolute h-full">
+        <div className="fixed w-3/4 h-screen bg-white border border-green-600">
+          sidevar
         </div>
       </div>
       <div className="relative">
-        <Navbar />
+        <Navbar setFirst={setFirst} />
         <div className="p-6">
           <Topics />
           <CardsWrapper />

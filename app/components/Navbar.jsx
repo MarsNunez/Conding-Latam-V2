@@ -1,7 +1,11 @@
-const Navbar = () => {
+"use client";
+const Navbar = ({ setFirst }) => {
   return (
     <nav className="border-b flex justify-between drop-shadow-sm p-4 py-5 items-center bg-white">
-      <div className="text-2xl h-fit flex p-2 ml-2">
+      <div
+        className="text-2xl h-fit flex p-2 ml-2"
+        onClick={() => setFirst(true)}
+      >
         <i className="lni lni-menu"></i>
       </div>
       <div className="flex items-center gap-2 border rounded-md text-sm font-medium px-3 py-2">
